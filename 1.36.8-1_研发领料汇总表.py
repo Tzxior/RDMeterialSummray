@@ -61,7 +61,7 @@ class RDMaterialSummaryApp(QWidget):
         self.excel_date = pd.Timestamp.now().strftime('%Y-%m')
         self.prev_rd_index = 0  # 用户选择的上一个RD编号，用于回溯
         self.prev_sample_index = 0  # 用户选择的上一个样品编号，用于回溯
-        self.material_array = []  # 物料数组，格式为[物料信息，可用次数，由此物料制作的样品编号]
+        self.material_array = []  # 物料数组，格式为[物料信息，可用次数，由此物料制作的样品编号，当前显示位置]
         self.sample_array = []  # 样品数组，格式为[样品编号，样品名称，样品数量，用途与处置方式，使用地点，包含物料，领用日期，处置日期]
         
     def initUI(self):
